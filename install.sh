@@ -1,10 +1,13 @@
 apt install -y linux-headers-$(uname -r)
 wait
 sleep 1
-apt install -y iptables-dev make gcc pkg-config git
+apt install -y libxtables-dev libip6tc-dev libip4tc-dev make gcc pkg-config git
+# apt install -y iptables-dev make gcc pkg-config git
 wait
 sleep 1
 apt install dkms
+wait
+sleep 1
 git clone https://github.com/Lochnair/xt_tls.git
 cd xt_tls/
 make
