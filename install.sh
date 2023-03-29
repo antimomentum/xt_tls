@@ -1,7 +1,7 @@
 apt install -y linux-headers-$(uname -r)
 wait
 sleep 1
-apt install -y libxtables-dev libip6tc-dev libip4tc-dev make gcc pkg-config git
+apt install -y iptables libxtables-dev libip6tc-dev libip4tc-dev make gcc pkg-config git
 # apt install -y iptables-dev make gcc pkg-config git
 wait
 sleep 1
